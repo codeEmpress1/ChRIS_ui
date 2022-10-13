@@ -173,6 +173,7 @@ const GuidedConfig = ({
           deleteInput={deleteInput}
           dropdownInput={dropdownInput}
           addParam={addParam}
+          disabled={true}
         />
       );
     });

@@ -26,7 +26,7 @@ const SimpleDropdown: React.FC<SimpleDropdownProps> = ({
   handleChange,
   addParam,
   deleteInput,
-
+  disabled,
   deleteComponent,
 }: SimpleDropdownProps) => {
   const [dropdownState, setDropdownState] =
@@ -102,6 +102,7 @@ const SimpleDropdown: React.FC<SimpleDropdownProps> = ({
             className="plugin-configuration__parameter"
             value={param.data.flag}
             name={param.data.help}
+            isDisabled={disabled}
           >
             {param.data.flag}
           </DropdownItem>
